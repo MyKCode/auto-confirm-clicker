@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Confirm Clicker</title>
+    <style>
+        body { font-family: Arial, sans-serif; width: 200px; padding: 10px; }
+        h3 { margin-top: 0; }
+        button { width: 100%; padding: 8px; margin-top: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h3>Auto Confirm Clicker</h3>
+    <p>This extension automatically confirms dialogs.</p>
+    <button id="testAlert">Test Alert</button>
+    <script>
+        document.getElementById("testAlert").addEventListener("click", function() {
+            alert("This alert will be blocked!");
+        });
+    </script>
+</body>
+</html>
